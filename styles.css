@@ -1,0 +1,37 @@
+* {
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #201B2E;
+}
+
+.bio-container {
+    width: 75%;
+}
+
+.bio-name-heading {
+    color: #FFE6E6;
+    background-color: #302844;
+    border-radius: 15px;
+    padding: 15px;
+    text-align: center;
+    margin: 1rem;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.bio-text {
+    padding: 0 15px;
+
+    color: #FFE6E6;
+}
+
+.project-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+}
