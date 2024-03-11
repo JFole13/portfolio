@@ -3,6 +3,11 @@
     box-sizing: border-box;
 }
 
+a, a:hover {
+    text-decoration: none;
+    color: #FFE6E6;
+}
+
 body {
     background-color: #201B2E;
 }
@@ -43,6 +48,10 @@ body {
 
 }
 
+.bio-section {
+    width: 40%;
+}
+
 .bio-text {
     padding: 0 15px;
     color: #FFE6E6;
@@ -68,6 +77,8 @@ body {
     overflow: hidden;
     height: 275px;
     width: 400px;
+    cursor: pointer;
+    border-radius: 6px;
 }
 
 .project::after {
@@ -116,10 +127,79 @@ body {
     padding: 20px;
     overflow-y: scroll;
     height: 100vh;
+    width: 60%;
 }
 
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 3; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    /* Center the modal content wrapper */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    /* Animation */
+    animation-name: modalOpen;
+    animation-duration: 0.4s;
+  }
+  
+  /* Add this at the bottom of your CSS */
+  @keyframes modalOpen {
+    from {
+      opacity: 0;
+      transform: scale(0);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  @keyframes modalClose {
+    from {
+      opacity: 1;
+      transform: scale(1);
+    }
+    to {
+      opacity: 0;
+      transform: scale(0);
+    }
+  }
+  
+  .modal-content.close {
+    animation-name: modalClose;
+  }
+  
+  .close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close-button:hover,
+  .close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
 @media screen and (max-width: 1500px) {
-    .project-section {
+    /* .project-section {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(6, 1fr);
@@ -129,5 +209,6 @@ body {
         overflow-y: scroll;
         height: 100vh;
         justify-items: center;
-    }
+    } */
+
 }
