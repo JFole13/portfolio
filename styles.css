@@ -145,9 +145,10 @@ body {
 }
 
 .modal-close-btn {
-  color: #aaa;
+  color: #FFE6E6;
   font-size: 2rem;
   font-weight: bold;
+  align-self: flex-start;
   justify-self: end;
   margin-right: 1rem;
 }
@@ -160,16 +161,16 @@ body {
 }
   
 .modal-content {
-  background-color: #8E4E9F;
+  background-color: #201B2E;
   padding: 20px;
-  border: 1px solid #000;
+  border: 1px solid #3b3b3b;
   width: 80%;
   height: 80%;
   animation-name: modalOpen;
   animation-duration: 0.4s;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 2fr 1fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
 }
@@ -179,33 +180,45 @@ body {
   animation-duration: 0.4s;
 }
 
+.modal-description {
+  color: #FFE6E6;
+  padding-right: 1.5rem;
+}
+
 .modal-title {
-  font-size: 4rem;
+  font-size: 4.5rem;
   font-weight: 700;
   color: #FFE6E6;
 }
-  
-  @keyframes modalOpen {
-    from {
-      opacity: 0;
-      transform: scale(0);
-    }
-    to {
-      opacity: 1;
-      transform: scale(1);
-    }
-  }
 
-  @keyframes modalClose {
-    from {
-      opacity: 1;
-      transform: scale(1);
-    }
-    to {
-      opacity: 0;
-      transform: scale(0);
-    }
+.test {
+  grid-area: 1 / 2 / 3 / 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  
+@keyframes modalOpen {
+  from {
+    opacity: 0;
+    transform: scale(0);
   }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes modalClose {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: scale(0);
+  }
+}
 
 @media screen and (max-width: 1500px) {
     /* .project-section {
