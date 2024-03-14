@@ -1,6 +1,7 @@
 * {
     font-family: "Poppins", sans-serif;
     box-sizing: border-box;
+    color: #FFE6E6;
 }
 
 a, 
@@ -23,7 +24,6 @@ body {
 }
 
 .bio-name-heading {
-    color: #FFE6E6;
     background-color: #302844;
     border-radius: 15px;
     padding: 15px;
@@ -35,7 +35,6 @@ body {
 
 .bio-link {
     padding: 5px 15px;
-    color: #FFE6E6;
     width: 40%;
     display: flex;
     align-items: center;
@@ -46,7 +45,6 @@ body {
 
 .bio-link:hover {
     background-color: #302844;
-
 }
 
 .bio-section {
@@ -54,9 +52,8 @@ body {
 }
 
 .bio-text {
-    padding: 0 15px;
-    color: #FFE6E6;
-    margin: 2rem 0;
+  padding: 0 15px;
+  margin: 2rem 0;
 }
 
 .hvr-fade {
@@ -70,6 +67,97 @@ body {
     transition-duration: 0.3s;
     -webkit-transition-property: color, background-color;
     transition-property: color, background-color;
+}
+
+.modal {
+  position: fixed;
+  z-index: 3;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.4);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-close-btn {
+  font-size: 2rem;
+  font-weight: bold;
+  align-self: flex-start;
+  justify-self: end;
+}
+
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-content {
+  background-color: #201B2E;
+  padding: 20px;
+  border: 1px solid #3b3b3b;
+  width: 80%;
+  height: 80%;
+  animation-name: modalOpen;
+  animation-duration: 0.4s;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr 2fr 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.modal-description {
+  padding-right: 1.5rem;
+}
+
+.modal-img {
+  grid-area: 1 / 2 / 3 / 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-link {
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 1.5rem;
+  padding: 5px 15px;
+  border-radius: 15px;
+}
+
+.modal-link:hover {
+  background-color: #302844;
+}
+
+.modal-stack-icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 0.75rem;
+}
+
+.modal-stack-icons-container {
+  display: flex;
+  align-items: center;
+}
+
+.modal-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  background-color: #302844;
+  border-radius: 15px;
+  width: 100%;
+  text-align: center;
+}
+
+.modal-title-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .project {
@@ -97,7 +185,6 @@ body {
     position: absolute; 
     bottom: 0px;
     left: 10px;
-    color: #FFE6E6;
     font-size: 1.1rem;
     font-weight: 600;
     z-index: 2;
@@ -113,7 +200,6 @@ body {
     position: absolute; 
     bottom: 50px;
     left: 10px;
-    color: #FFE6E6;
     font-size: 2rem;
     font-weight: 700;
     z-index: 2;
@@ -130,73 +216,6 @@ body {
     height: 100vh;
     width: 60%;
 }
-
-.modal {
-    position: fixed;
-    z-index: 3;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.4);
-    display: none;
-    justify-content: center;
-    align-items: center;
-}
-
-.modal-close-btn {
-  color: #FFE6E6;
-  font-size: 2rem;
-  font-weight: bold;
-  align-self: flex-start;
-  justify-self: end;
-  margin-right: 1rem;
-}
-  
-.modal-close-btn:hover,
-.modal-close-btn:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}
-  
-.modal-content {
-  background-color: #201B2E;
-  padding: 20px;
-  border: 1px solid #3b3b3b;
-  width: 80%;
-  height: 80%;
-  animation-name: modalOpen;
-  animation-duration: 0.4s;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 1fr 2fr 1fr;
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-}
-
-.modal-content.close {
-  animation-name: modalClose;
-  animation-duration: 0.4s;
-}
-
-.modal-description {
-  color: #FFE6E6;
-  padding-right: 1.5rem;
-}
-
-.modal-title {
-  font-size: 4.5rem;
-  font-weight: 700;
-  color: #FFE6E6;
-}
-
-.test {
-  grid-area: 1 / 2 / 3 / 3;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
   
 @keyframes modalOpen {
   from {
@@ -206,17 +225,6 @@ body {
   to {
     opacity: 1;
     transform: scale(1);
-  }
-}
-
-@keyframes modalClose {
-  from {
-    opacity: 1;
-    transform: scale(1);
-  }
-  to {
-    opacity: 0;
-    transform: scale(0);
   }
 }
 
