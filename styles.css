@@ -111,11 +111,11 @@ body {
   grid-row-gap: 0px;
 }
 
-.modal-description {
+.modal-description-container {
   padding-right: 1.5rem;
 }
 
-.modal-img {
+.modal-img-container {
   grid-area: 1 / 2 / 3 / 3;
   display: flex;
   justify-content: center;
