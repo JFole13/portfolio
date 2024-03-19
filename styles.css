@@ -115,6 +115,10 @@ body {
   padding-right: 1.5rem;
 }
 
+.modal-img {
+  height: 340px;
+}
+
 .modal-img-container {
   grid-area: 1 / 2 / 3 / 3;
   display: flex;
@@ -252,7 +256,7 @@ body {
   }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 480px) {
   .bio-link {
     width: 47%;
   }
@@ -261,13 +265,55 @@ body {
     font-size: 2.3rem;
   }
 
+  .bio-text {
+    margin: 1.5rem 0;
+  }
+
+  .modal-content {
+    overflow-y: scroll;
+  }
+
+  .modal-description-container {
+    margin-top: 0.4rem;
+  }
+
+  .modal-description-text {
+    font-size: 0.8rem;
+  }
+
+  .modal-stack-icon {
+    height: 30px;
+    width: 30px;
+    margin-bottom: 1rem;
+  }
+
   .project {
     height: 225px;
     width: 327px;
+  } 
+}
+
+@media screen and (min-width: 480px) and (max-width: 830px) {
+  .modal-description-container {
+    margin-top: 0.4rem;
   }
 
-  
+  .modal-description-text {
+    font-size: 0.8rem;
+  }
+
+  .modal-stack-icon {
+    height: 30px;
+    width: 30px;
+  }
 }
+
+@media screen and (min-width: 1000px) and (max-width: 1191px) {
+  .modal-description-text {
+    font-size: 0.8rem;
+  }
+}
+
 
 /*----------------------------------------------------- Mobile (Portrait) -----------------------------------------------------*/
 
@@ -290,7 +336,8 @@ body {
   }
   
   .modal-title {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
+    padding: 5px;
   }
 
   .project-section {
@@ -340,7 +387,7 @@ body {
   }
 
   .bio-link {
-    width: 20%;
+    width: 24%;
   }
   
   .main-container {
@@ -388,6 +435,7 @@ body {
 
   .modal-title {
     font-size: 1.7rem;
+    padding: 5px;
   }
 
   .project-section {
