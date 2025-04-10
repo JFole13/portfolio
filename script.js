@@ -173,7 +173,7 @@ const generateBlackJackPreviewContent = () => {
   gitHubIconLink.target = '_blank';
   gitHubIconLink.append(gitHubIcon);
   modalStackIconsContainer.append(gitHubIconLink);
-  modalLink.href = 'blackjack/index.html';
+  modalLink.href = 'blackjack-master/index.html';
   modalLink.target = '_blank';
 }
 
