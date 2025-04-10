@@ -74,7 +74,7 @@ const generateWeddingPreviewContent = () => {
   gitHubIconLink.target = '_blank';
   gitHubIconLink.append(gitHubIcon);
   modalStackIconsContainer.append(gitHubIconLink);
-  modalLink.href = 'https://breandjessefoley.com/';
+  modalLink.style.display = 'none';
   modalLink.target = '_blank';
 }
 
@@ -101,7 +101,7 @@ const generateALiggettDesignsPreviewContent = () => {
   gitHubIconLink.target = '_blank';
   gitHubIconLink.append(gitHubIcon);
   modalStackIconsContainer.append(gitHubIconLink);
-  modalLink.href = 'https://aliggettdesigns.com/';
+  modalLink.style.display = 'none';
   modalLink.target = '_blank';
 }
 
@@ -122,7 +122,7 @@ const generateKylePreviewContent = () => {
   gitHubIconLink.target = '_blank';
   gitHubIconLink.append(gitHubIcon);
   modalStackIconsContainer.append(gitHubIconLink);
-  modalLink.href = 'https://kylet.net/';
+  modalLink.style.display = 'none';
   modalLink.target = '_blank';
 }
 
@@ -149,7 +149,7 @@ const generateHindsitePreviewContent = () => {
   gitHubIconLink.target = '_blank';
   gitHubIconLink.append(gitHubIcon);
   modalStackIconsContainer.append(gitHubIconLink);
-  modalLink.href = '#';
+  modalLink.style.display = 'none';
   modalLink.target = '_self';
 }
 
