@@ -1,0 +1,426 @@
+@font-face {
+  font-family: "Neue";
+  src: url("./fonts/NeuePlakBlack.ttf") format("truetype");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Neue Extended";
+  src: url("./fonts/NeuePlakExtendedRegular.ttf") format("truetype");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Neue Condensed";
+  src: url("./fonts/NeuePlakCondensedRegular.ttf") format("truetype");
+  font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+        background-color: #f6f7f7;
+
+}
+
+footer {
+        background-color: #f6f7f7;
+        display: flex;
+        padding: 0 1rem 0.5rem 0;
+  font-family: "Neue Extended";
+  justify-content: end;
+
+}
+
+footer p {
+    margin: 0 0.3rem;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+nav h1 {
+    width: 75%;
+    text-align: center;
+    padding: 1rem 0;
+    font-family: "Neue";
+}
+
+nav img {
+    width: 30px;
+    height: 30px
+}
+
+nav p {
+    display: flex;
+    text-align: center;
+}
+
+.background {
+    width: 175px;
+    height: 225px;
+    background-color: #8fcab7;
+  border-radius: 12px;
+
+}
+
+.container {
+    display: flex;
+    padding: 0 2rem;
+    gap: 2rem;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    align-items: center;
+}
+
+#contact-form button {
+    width: 60%;
+        background-color: #e0f1ec;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.2rem;
+  font-family: "Neue Extended";
+  padding: 0.2rem 0;
+}
+
+.container-reverse {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 2rem;
+    padding: 0 2rem;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1.5rem 0;
+    background-color: #8fcab7;
+
+}
+
+.gallery * {
+    margin: 0.5rem 0;
+}
+
+.gallery h1 {
+     font-size: 2rem;
+  font-family: "Neue Extended";
+  color: #e0f1ec;
+  text-align: center;
+}
+
+.gallery-carousel {
+    width: 100%;
+    display: flex;
+    gap: 1.5rem;
+    overflow-x: auto;
+    padding: 1rem 2rem;
+    box-sizing: border-box;
+
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+
+.gallery-carousel::-webkit-scrollbar {
+    display: none; /* Hide scrollbar */
+}
+
+.gallery-carousel {
+    scrollbar-width: none; /* Firefox */
+}
+
+.gallery-carousel img {
+    flex: 0 0 auto;
+    width: 350px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.gallery-carousel img:hover {
+    transform: scale(1.03);
+}
+
+.estimate {
+    background-color: #8fcab7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1.5rem 0;
+}
+
+.estimate * {
+    margin: 0.5rem 0;
+}
+
+.estimate h1 {
+    font-size: 2rem;
+  font-family: "Neue Extended";
+  color: #e0f1ec;
+  text-align: center;
+}
+
+.estimate p {
+    color: rgb(31, 31, 31);
+  font-family: "Neue Extended";
+  text-align: center;
+}
+
+.icon-circle {
+    width: 35px;
+    height: 35px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 1rem;
+
+}
+
+.icon-circle img {
+    width: 20px;
+    height: 20px;
+}
+
+.input-row {
+    display: flex;
+    align-items: center;
+    width: 95%;
+}
+
+.input-row input {
+    background-color: #e0f1ec;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.2rem;
+  font-family: "Neue Condensed";
+  padding: 0.3rem;
+  width: 80%;
+}
+
+.introduction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1.5rem 0;
+    padding: 1rem;
+    background-color: #fff;
+}
+
+.introduction * {
+    margin: 0.5rem 0;
+}
+
+.introduction h1 {
+    font-size: 2rem;
+  font-family: "Neue Extended";
+}
+
+.introduction img {
+    width: 350px;
+    height: 250px;
+    border-radius: 10px;
+}
+
+.introduction p {
+    color: gray;
+  font-family: "Neue Extended";
+  text-align: center;
+}
+
+.overall-review-row {
+    display: flex;
+    align-items: center;
+}
+
+.overall-review-row img {
+    margin: 0 0.2rem
+}
+
+.overall-review-row p {
+    color: #8fcab7;
+  font-family: "Neue Extended";
+    font-size: 1.2rem;
+    margin: 0 0.5rem;
+}
+
+.overlay-row {
+    position: relative;
+    /* width: fit-content; */
+    display: flex;
+    /* justify-content: space-around; */
+}
+
+.overlay-row img {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+
+  width: 175px;
+  height: 225px;
+  object-fit: cover;
+
+  border-radius: 10px;
+}
+
+.overlay-row-reverse {
+    position: relative;
+    display: flex;
+    /* justify-content: space-around; */
+}
+
+.overlay-row-reverse img {
+  position: absolute;
+  top: 15px;
+  left: -15px;
+
+  width: 175px;
+  height: 225px;
+  object-fit: cover;
+
+  border-radius: 10px;
+}
+
+.overlay-row-list {
+  font-family: "Neue Condensed";
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+}
+.overlay-row-list img {
+    width: 20px;
+    height: 20px;
+    margin-right: 0.7rem;
+}
+
+.overlay-row-list li {
+    background-color: #e0f1ec;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    font-size: 1.6rem;
+    border-radius: 5px;
+    padding: 0.1rem 0.5rem;
+    margin: 2.5rem 0;
+
+}
+
+.reverse {
+    justify-content: end;
+}
+
+.review {
+    width: 200px;
+    padding: 0.5rem;
+    background-color: #e0f1ec;
+    border: #8fcab7;
+    border: 1px solid #8fcab7;
+    border-radius: 6px;
+}
+
+.review p {
+  font-family: "Neue Condensed";
+}
+
+.review h4 {
+  font-family: "Neue Extended";
+}
+
+.review img {
+    width: 15px;
+    height: 15px;
+    margin: 0
+}
+
+.review-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.reviews {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1.5rem 0;
+}
+
+.reviews * {
+    margin: 0.5rem 0;
+}
+
+.reviews h1 {
+    font-size: 2rem;
+  font-family: "Neue Extended";
+  text-align: center;
+}
+
+.row {
+    display: flex;
+    flex-direction: row; 
+}
+
+.slider {
+    overflow: hidden;
+    width: 100%;
+}
+
+.slide-track {
+    display: flex;
+    width: max-content;
+    animation: scroll 40s linear infinite;
+    gap: 2rem;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+.slide-track:hover {
+    animation-play-state: paused;
+}
+
+.views {
+    display: flex;
+    flex-direction: column;
+    margin: 1.5rem 0;
+    background-color: #f6f7f7;
+}
+
+.views * {
+    margin: 0.5rem 0;
+}
+
+.views h1 {
+    font-size: 2rem;
+  font-family: "Neue Extended";
+  text-align: center;
+}
+
+
+.views p {
+    color: gray;
+      font-family: "Neue Extended";
+  text-align: center;
+
+}
